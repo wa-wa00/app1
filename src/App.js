@@ -5,7 +5,7 @@ function App() {
     const divStyle = {
       color: 'red',
       backgroundColor: 'powerblue',
-      fontSize: 'large',
+      fontSize: 'larger',
       padding: '30px',
     }
     return<div style={divStyle}>Hello React</div>
