@@ -6,11 +6,9 @@ function App() {
       color: 'red',
       backgroundColor: 'powerblue',
       fontSize: 'large',
+      padding: '30px',
     }
-    const el = (
-      <div style={divStyle}>Hello React</div>
-    )
-    return el
+    return<div style={divStyle}>Hello React</div>
 }
 
 export default App;
