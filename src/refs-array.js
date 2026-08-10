@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function RefsArray() {
+export default function () {
     const table = React.useRef()
     const tr = React.useRef([])
     const data = [
