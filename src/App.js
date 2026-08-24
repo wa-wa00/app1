@@ -1,16 +1,25 @@
-import React from 'react';
-import { Header,Content,Footer } from './func-components';
-import Calendar from './class-component';
-import {Calculator2} from './calculator'
-import {EventData2} from './event-data'
-import RefsFunc from './refs-func'
-import RefsArray from './refs-array'
-import Cart from './refs-state-func'
-import MessageBox from './refs-state-func';
-import Effect from './effect'
+import React from 'react'
+import { userContext } from './context'
+import Header from './context-header'
+import Content from './context-content'
+import Header2 from './context-header2'
+import Content2 from './context-content2'
 
-function App() {
-    return <Effect/>;
+export default function App() {
+    let [user, setUser] = React.useState('')
+
+    return (
+        <>
+            
+
+            <br/>
+            <hr/>
+            <br/>
+
+            <userContext.Provider value={[user, setUser]}>
+                <Header2/>
+                <Content2/>
+            </userContext.Provider>
+        </>
+    )
 }
-export default App;
-
