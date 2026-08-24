@@ -7,8 +7,10 @@ import RefsFunc from './refs-func'
 import RefsArray from './refs-array'
 import Cart from './refs-state-func'
 import MessageBox from './refs-state-func';
+import Effect from './effect'
 
-export default function App() {
-    return <MessageBox />;
+function App() {
+    return <Effect/>;
 }
+export default App;
 
